@@ -1,0 +1,10 @@
+services:
+  api-teste:
+    build:
+      context: .docker
+      dockerfile: dockerfile
+    container_name: api-teste
+    volumes: 
+      - .:/home/node/back
+    ports:
+      - 4000:4000
